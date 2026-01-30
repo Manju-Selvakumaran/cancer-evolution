@@ -1,0 +1,233 @@
+
+================================================================================
+CANCER EVOLUTION PROJECT: COMPREHENSIVE ANALYSIS REPORT
+================================================================================
+
+PROJECT: Phylogenetic Analysis of Breast Cancer Subclones
+DATE: 2026-01-30 14:44:09
+ANALYST: Cancer Evolution Research
+
+================================================================================
+1. DATASET OVERVIEW
+================================================================================
+Total cells in analysis: 1,508
+Total genes profiled: 20,814
+Cancer subclones identified: 7
+
+Original cancer clusters:
+  • Cluster 1 (Luminal Epithelial): 556 cells
+  • Cluster 2 (Luminal Epithelial): 535 cells
+  • Cluster 4 (Basal/Myoepithelial): 417 cells
+
+================================================================================
+2. SUBCLONE DISTRIBUTION & CHARACTERISTICS
+================================================================================
+
+Subclone 0:
+  Population:  336 cells ( 22.3%)
+  Origin: Cluster 1
+  Spatial compactness: 1.51
+
+Subclone 1:
+  Population:  283 cells ( 18.8%)
+  Origin: Cluster 2
+  Spatial compactness: 1.40
+
+Subclone 2:
+  Population:  269 cells ( 17.8%)
+  Origin: Cluster 4
+  Spatial compactness: 1.61
+
+Subclone 3:
+  Population:  251 cells ( 16.6%)
+  Origin: Cluster 2
+  Spatial compactness: 1.24
+
+Subclone 4:
+  Population:  152 cells ( 10.1%)
+  Origin: Cluster 4
+  Spatial compactness: 1.05
+
+Subclone 5:
+  Population:  113 cells (  7.5%)
+  Origin: Cluster 1
+  Spatial compactness: 0.93
+
+Subclone 6:
+  Population:  104 cells (  6.9%)
+  Origin: Cluster 1
+  Spatial compactness: 1.22
+
+================================================================================
+3. EVOLUTIONARY RELATIONSHIPS
+================================================================================
+
+PHYLOGENETIC TREE INSIGHTS:
+- Tree depth (maximum divergence): 33.29
+- Median pairwise distance: 1.20
+
+Closest subclone pairs (most recent common ancestor):
+  • SC1 ↔ SC3: distance = 15.83, 314 DE genes
+  • SC0 ↔ SC5: distance = 17.43, 416 DE genes
+  • SC5 ↔ SC6: distance = 18.07, 99 DE genes
+  • SC0 ↔ SC6: distance = 19.74, 793 DE genes
+  • SC2 ↔ SC4: distance = 21.67, 814 DE genes
+
+Most diverged subclone pairs:
+  • SC1 ↔ SC4: distance = 33.06, 2587 DE genes
+  • SC1 ↔ SC2: distance = 33.43, 3577 DE genes
+  • SC3 ↔ SC6: distance = 35.36, 2767 DE genes
+  • SC1 ↔ SC5: distance = 36.46, 3133 DE genes
+  • SC1 ↔ SC6: distance = 40.03, 3983 DE genes
+
+================================================================================
+4. FUNCTIONAL PATHWAY ANALYSIS
+================================================================================
+
+PATHWAY EXPRESSION HIGHLIGHTS:
+
+Highest Cell Cycle Activity:
+  • SC6: 0.537
+  • SC0: 0.409
+
+Highest EMT/Metastasis (Aggressive Phenotype):
+  • SC6: EMT=0.255, Metastasis=0.474
+  • SC4: EMT=0.137, Metastasis=0.158
+
+Highest ECM Remodeling:
+  • SC6: 1.196
+  • SC4: 0.656
+
+Unique Immune Response:
+  • SC3: 0.512 (only positive subclone)
+
+================================================================================
+5. SPATIAL DISTRIBUTION
+================================================================================
+
+Most compact subclones (tight clustering):
+  • SC5: compactness = 0.93
+  • SC4: compactness = 1.05
+  • SC6: compactness = 1.22
+
+Most dispersed subclones:
+  • SC1: compactness = 1.40
+  • SC0: compactness = 1.51
+  • SC2: compactness = 1.61
+
+Spatially proximate pairs (potentially sharing niches):
+  • SC5 ↔ SC6: distance = 1.88
+  • SC5 ↔ SC0: distance = 3.02
+  • SC1 ↔ SC3: distance = 3.38
+
+================================================================================
+6. EVOLUTIONARY RATES & DIVERGENCE
+================================================================================
+
+Correlation between genetic distance and transcriptional divergence:
+  • Pearson r = 0.931 (very strong correlation)
+  • p-value < 0.001 (highly significant)
+
+Most evolutionarily divergent subclone:
+  • SC1: Average 2692 DE genes vs other subclones
+
+Most conserved subclone:
+  • SC5: Average 1306 DE genes vs other subclones
+
+Fastest evolving pairs:
+  • SC1-SC6: 3983 DE genes
+  • SC1-SC2: 3577 DE genes
+  • SC1-SC5: 3133 DE genes
+  • SC2-SC3: 2776 DE genes
+  • SC3-SC6: 2767 DE genes
+
+================================================================================
+7. BIOLOGICAL INTERPRETATION
+================================================================================
+
+EVOLUTIONARY MODEL:
+The analysis reveals a complex evolutionary landscape with 7 distinct cancer 
+subclones showing varying degrees of divergence. The strong correlation between
+genetic distance and transcriptional divergence (r=0.931) suggests consistent
+evolutionary processes.
+
+KEY FINDINGS:
+
+1. SUBCLONE DIVERSITY:
+   • Both luminal (SC0,1,3,5,6) and basal (SC2,4) lineages show intra-subtype
+     heterogeneity, indicating ongoing evolution within cell types
+
+2. EVOLUTIONARY HOTSPOTS:
+   • SC1 shows highest average divergence, suggesting it may represent a
+     rapidly evolving or early-branching lineage
+   • SC5 and SC6 are extremely similar (99 DE genes), likely sister clones
+     from recent common ancestor
+
+3. FUNCTIONAL DIVERSIFICATION:
+   • SC6 shows aggressive phenotype: high EMT, metastasis, and ECM remodeling
+   • SC3 unique immune signature may represent immunogenic subclone
+   • SC0,5 show proliferative luminal phenotype with lower aggression markers
+
+4. SPATIAL ORGANIZATION:
+   • Compact subclones (SC5, SC4) suggest niche-specific adaptation
+   • Dispersed subclones (SC2) may occupy multiple microenvironments
+   • Spatial proximity of SC5-SC6 consistent with their genetic similarity
+
+5. THERAPEUTIC IMPLICATIONS:
+   • Heterogeneity suggests multi-targeted therapy may be necessary
+   • SC6's aggressive profile makes it priority therapeutic target
+   • SC3's immune signature may be amenable to immunotherapy
+
+================================================================================
+8. OUTPUT FILES GENERATED
+================================================================================
+
+✓ VISUALIZATIONS:
+  • cancer_cells_identification.png
+  • final_subclones_selected.png
+  • genetic_distance_matrix.png
+  • phylogenetic_tree.png
+  • comprehensive_evolutionary_map.png
+  • subclone_driver_genes_heatmap.png
+  • subclone_markers_dotplot.png
+  • pathway_heatmap_comprehensive.png
+  • pathway_dotplot_summary.png
+  • spatial_distribution_subclones.png
+  • subclone_density_maps.png
+  • spatial_overlap_analysis.png
+  • evolutionary_rate_analysis.png
+
+✓ DATA FILES:
+  • driver_genes_subclone_*.csv (marker genes for each subclone)
+  • genes_for_enrichment_SC*.txt (for external pathway analysis)
+  • pairwise_de_gene_counts.csv (evolutionary divergence data)
+  • cluster_markers.csv
+  • cell_type_summary.csv
+
+================================================================================
+9. RECOMMENDATIONS FOR FUTURE ANALYSIS
+================================================================================
+
+1. Copy Number Variation Analysis:
+   • Use inferCNV or copyKAT to identify CNV-based subclones
+   • Compare CNV-based vs expression-based phylogeny
+
+2. Trajectory Analysis:
+   • Perform RNA velocity analysis to infer directionality
+   • Use CellRank or scVelo for dynamic trajectory inference
+
+3. External Pathway Enrichment:
+   • Upload gene lists to Enrichr/g:Profiler for comprehensive pathways
+   • Perform Gene Set Enrichment Analysis (GSEA)
+
+4. Clinical Correlation:
+   • If available, correlate subclones with patient outcomes
+   • Assess subclone signatures in independent cohorts
+
+5. Multi-omics Integration:
+   • Integrate with ATAC-seq, proteomics if available
+   • Spatial transcriptomics to validate spatial organization
+
+================================================================================
+END OF COMPREHENSIVE ANALYSIS REPORT
+================================================================================
